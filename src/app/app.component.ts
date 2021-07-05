@@ -14,17 +14,19 @@ export class AppComponent {
   porcentaje: number = 0.234;
   salario: number = 1234.5;
   fecha: Date = new Date();
-
+  activar: boolean = true;
   idioma: string = "es";
   videoUrl: string = 'https://www.youtube.com/embed/_ZXjT43__XQ'
-
+  
   valorPromesa = new Promise<string>((resolve) => {
-
+    
+    
     setTimeout(()=> {
       resolve('Llego la data')
     }, 4500)
   })
-
+  
+  
   heroe = {
     nombre: 'Logan',
     clave: 'Wolverin',
@@ -34,5 +36,8 @@ export class AppComponent {
       casa: 20
     }
   }
-
+  }
+function activar(activar: any, any: any) {
+  throw new Error('Function not implemented.');
 }
+
